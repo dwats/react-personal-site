@@ -1,0 +1,48 @@
+.header {
+  height: 50px;
+  background: $primary;
+  color: $font-invert;
+  padding: 1rem;
+  display: flex;
+  align-content: center;
+  z-index: 3;
+}
+
+.header__icon {
+  margin: -0.5rem 1.5rem 0 0;
+  height: 120%;
+}
+
+.header__icon>img {
+  height: 100%;
+  clip-path: circle(45% at 50%);
+}
+
+.header__title {
+  font-size: $l-size;
+  margin: 0;
+}
+
+.header__subtitle {
+  color: lighten($font-invert, 5%);
+  font-size: $m-size;
+  margin: 0;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .header {
+    height: 100px;
+    padding: 3rem;
+  }
+  .header__icon {
+    margin: -1rem 3rem 0 -1rem;
+    height: 120%;
+  }
+  .header__title {
+    font-size: $xl-size;
+    font-weight: thin;
+  }
+  .header__subtitle {
+    font-size: $m-size;
+  }
+}
