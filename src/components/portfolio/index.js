@@ -35,7 +35,10 @@ class Portfolio extends Component {
         <div>
           <div className="article">
             <div className="article_body">
-              <ReactMarkdown source={this.state.markdown} />
+              <ReactMarkdown
+                source={this.state.markdown}
+                renderers={{link: props => <a href={props.href} target="_blank">{props.children}</a>}}
+              />
             </div>
             <Link className="article_button" to={`${match.url}/podcast`}>Open</Link>
           </div>
