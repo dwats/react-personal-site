@@ -17,7 +17,7 @@ function Header (params) {
         <img src={contactIcon} alt="contact nav link"/>
         <span>Contact</span>
       </NavLink>
-      <a className="nav_link" href="https://github.com/dwats" target="_blank">
+      <a className="nav_link" href="https://github.com/dwats" target="_blank" rel="noopener noreferrer">
         <img src={github} alt="github nav link"/>
         <span>Github</span>
       </a>

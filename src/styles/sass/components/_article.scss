@@ -3,7 +3,7 @@
   color: $primary-font;
   border-radius: 2px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  width: 50%;
+  width: 90%;
   margin: 2rem auto;
 }
 
@@ -16,8 +16,15 @@
   background-color: $secondary-d;
   display: block;
   padding: 2rem;
-  color: $black;
+  color: $white;
   text-align: center;
-  font-size: $m-size;
+  font-size: $l-size;
   text-decoration: none;
+  font-weight: 700;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .article {
+    width: 60%;
+  }
 }

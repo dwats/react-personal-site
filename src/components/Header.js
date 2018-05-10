@@ -6,7 +6,7 @@ function Header (params) {
     <div className="header">
       <div className="header__icon_container">
         <div className="header__icon">
-          <img src={logo}></img>
+          <img src={logo} alt="logo"></img>
         </div>
       </div>
       <div className="header__title_container">

@@ -32,7 +32,7 @@ class Portfolio extends Component {
     return (
       <div>
         <ContentHeader title="Portfolio" subtitle="Take a look at what I've done."/>
-        <div className="content_container">
+        <div>
           <div className="article">
             <div className="article_body">
               <ReactMarkdown source={this.state.markdown} />
