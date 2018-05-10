@@ -27,8 +27,12 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="article">
-        <ReactMarkdown source={this.state.markdown} />
+      <div>
+        <div className="article">
+          <div className="article_body">
+            <ReactMarkdown source={this.state.markdown} />
+          </div>
+        </div>
       </div>
     )
   }

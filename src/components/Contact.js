@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ReactMarkdown from 'react-markdown'
 import contact from '../markdown/contact.md'
+import ContentHeader from './ContentHeader'
 
 class Contact extends Component {
   constructor (props) {
@@ -27,11 +28,16 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="article">
-        <ReactMarkdown
-          source={this.state.markdown}
-          renderers={{link: props => <a href={props.href} target="_blank">{props.children}</a>}}
-        />
+      <div>
+        <ContentHeader title="Contact Me" subtitle="Get in touch!"/>
+        <div className="article">
+          <div className="article_body">
+            <ReactMarkdown
+              source={this.state.markdown}
+              renderers={{link: props => <a href={props.href} target="_blank">{props.children}</a>}}
+            />
+          </div>
+        </div>
       </div>
     )
   }

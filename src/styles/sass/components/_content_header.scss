@@ -1,0 +1,15 @@
+.content_header {
+  padding: 3rem;
+  background-color: darken($primary-d, 10%);
+}
+
+.content_header__title {
+  font-weight: bold;
+  font-size: 4rem;
+  color: $white;
+}
+
+.content_header__subtitle {
+  font-size: 2rem;
+  color: $white;
+}

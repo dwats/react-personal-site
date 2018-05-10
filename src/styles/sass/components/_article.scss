@@ -1,8 +1,23 @@
 .article {
-  background-color: #ccc;
-  color: $font-invert;
+  background-color: $white;
+  color: $primary-font;
   border-radius: 2px;
-  margin: 2rem;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  width: 50%;
+  margin: 2rem auto;
+}
+
+.article_body {
+  font-size: 80%;
   padding: 2rem;
+}
+
+.article_button {
+  background-color: $secondary-d;
+  display: block;
+  padding: 2rem;
+  color: $black;
+  text-align: center;
+  font-size: $m-size;
+  text-decoration: none;
 }

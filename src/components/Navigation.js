@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { homeIcon, portfolioIcon, contactIcon } from '../images';
+import { homeIcon, portfolioIcon, contactIcon, github } from '../images';
 
 function Header (params) {
   return (
@@ -17,6 +17,10 @@ function Header (params) {
         <img src={contactIcon} alt="contact nav link"/>
         <span>Contact</span>
       </NavLink>
+      <a className="nav_link" href="https://github.com/dwats" target="_blank">
+        <img src={github} alt="github nav link"/>
+        <span>Github</span>
+      </a>
     </div>
   )
 }

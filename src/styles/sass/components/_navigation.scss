@@ -3,15 +3,14 @@
   margin: 0 auto;
   padding: 15px 0;
   width: 100%;
-  font-size: 1rem;
+  font-size: 0.75rem;
+  font-weight: 800;
   text-decoration: none;
   text-transform: uppercase;
   color: $font-100;
-  transition: 0.3s;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-weight: 800;
   .nav_link:first {
     margin-top: 20px;
   }
@@ -19,19 +18,30 @@
 
 .nav_link>span {
   padding: 0.25rem;
-  transform: translateX(-200px);
-  transition: 0.1s;
 }
 
 .nav_link.active, .nav_link.active>span {
   color: $font-invert;
-  background-color: $primary;
-  transform: translateX(0px);
-  transition: 0.1s;
+  background-color: $active;
 }
 
+@media (min-width: $desktop-breakpoint) {
+  .nav_link {
+    transition: 0.3s;
+  }
 
-.nav_link:hover>span {
-  transform: scale(1.1);
-  color: $font-100;
+  .nav_link>span {
+    transform: translateX(-200px);
+    transition: 0.1s;
+  }
+
+  .nav_link.active, .nav_link.active>span {
+    transform: translateX(0px);
+    transition: 0.1s;
+  }
+
+  .nav_link:hover>span {
+    transform: scale(1.1);
+    color: $font-100;
+  }
 }

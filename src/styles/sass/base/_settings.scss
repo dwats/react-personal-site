@@ -3,18 +3,34 @@ $content-bg: #303030;
 $nav-bg: #212121;
 $card-bg: #424242;
 $primary: #2196f3;
-$accent: #333745;
-$active: #2196f3;
-$hover: #eee;
+$accent: hsl(227, 15%, 24%);
+
+$white: #fff;
+$black: #000;
+
+$primary: #607d8b;
+$primary-l: #8eacbb;
+$primary-d: #34515e;
+$primary-font: $black;
+
+$secondary: #8c9eff;
+$secondary-l: #c0cfff;
+$secondary-d: #5870cb;
+$secondary-font: $black;
+
 // Font Colors
 $font-100: #fff;
 $font-70: #bbb;
 $font-50: #888;
 $font-invert: #111;
 
+// Clickables
+$active: #aaa;
+$hover: #eee;
+
 // Spacing
-$s-size: 1.2rem;
-$m-size: 1.6rem;
-$l-size: 3.2rem;
-$xl-size: 4.8rem;
+$s-size: 1rem;
+$m-size: 1.5rem;
+$l-size: 2.5rem;
+$xl-size: 5rem;
 $desktop-breakpoint: 45rem;
