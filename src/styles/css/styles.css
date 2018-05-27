@@ -144,6 +144,9 @@ p {
   font-size: 80%;
   padding: 2rem; }
 
+.article_body > video {
+  width: 100%; }
+
 .article_button {
   background-color: #5870cb;
   display: block;

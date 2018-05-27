@@ -12,6 +12,10 @@
   padding: 2rem;
 }
 
+.article_body > video {
+  width: 100%;
+}
+
 .article_button {
   background-color: $secondary-d;
   display: block;

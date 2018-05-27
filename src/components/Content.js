@@ -5,6 +5,7 @@ import Home from './Home'
 import Portfolio from './portfolio'
 import Contact from './Contact'
 import Podcast from './portfolio/podcast'
+import Timelapse from './portfolio/timelapse'
 
 class Content extends Component {
   constructor(props) {
@@ -21,6 +22,7 @@ class Content extends Component {
         <Route exact path='/portfolio' component={Portfolio} />
         <Route path='/contact' component={Contact} />
         <Route path='/portfolio/podcast' component={Podcast} />
+        <Route path='/portfolio/timelapse' component={Timelapse} />
       </div>
     )
   }
